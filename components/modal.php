@@ -1,3 +1,19 @@
+    <div class="modal fade" id="updateAccountModal" tabindex="-1" aria-labelledby="updateAccountModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-header pb-0 border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body undefined text-center mb-10">
+                    <img src="assets/img/caution.png" width="150" alt="">
+                    <p>Please contact the admin <br>via support@rsimulator.ca to update biodata.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="modal fade" id="depositLiquidityModal" tabindex="-1" aria-labelledby="depositLiquidityModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content overflow-hidden">
