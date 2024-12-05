@@ -72,27 +72,27 @@
                     <div class="row g-5">
                         <div class="col-sm-12">
                             <label class="form-label">Username</label> 
-                            <input type="text" name="username" class="form-control">
+                            <input type="text" name="username" class="form-control" required>
                         </div>
                         <div class="col-sm-12">
                             <label class="form-label">First name</label> 
-                            <input type="text" name="first_name" class="form-control">
+                            <input type="text" name="first_name" class="form-control" required>
                         </div>
                         <div class="col-sm-12">
                             <label class="form-label">Last name</label> 
-                            <input type="text" name="last_name" class="form-control">
+                            <input type="text" name="last_name" class="form-control" required>
                         </div>
                         <div class="col-sm-6">
                             <label class="form-label">Email</label> 
-                            <input type="email" name="email" class="form-control">
+                            <input type="email" name="email" class="form-control" required>
                         </div>
                         <div class="col-sm-6">
                             <label class="form-label">Phone</label> 
-                            <input type="tel" name="phone" class="form-control">
+                            <input type="tel" name="phone" class="form-control" required>
                         </div>
                         <div class="col-sm-12">
                             <label class="form-label">Password</label> 
-                            <input type="password" class="form-control">
+                            <input type="password" name="password" class="form-control" required>
                         </div>
                         <div class="col-sm-12">
                             <button name="user_registration" class="btn btn-dark w-100">Sign up</button>

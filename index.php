@@ -1,33 +1,20 @@
-<!doctype html>
-<html lang="en" data-theme="light">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="color-scheme" content="dark light">
-    <title>IRS&trade; :: Incident Response Simulation</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/utility.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@900,700,500,300,401,400&amp;display=swap">
-</head>
-
-<body class="p-1 p-lg-2">
-    <div class="overflow-x-hidden rounded-top-4 pt-2 pt-lg-4">
+<?php
+include "./components/header.php";
+?>
         <header>
             <div class="w-lg-75 mx-2 mx-lg-auto position-relative z-2 px-lg-3 py-1 shadow-5 rounded-3 rounded-lg-pill bg-dark">
                 <nav class="navbar navbar-expand-lg navbar-dark p-0" id="navbar">
                     <div class="container px-sm-0">
-                        <a class="navbar-brand d-inline-block w-lg-64" href="#">
-                            <img src="assets/img/logos/logo-light.svg" class="h-rem-10" alt="...">
+                        <a class="navbar-brand d-inline-block w-lg-64" href="./">
+                            <img src="assets/img/logo-colored.svg" class="h-rem-10 ms-4" alt="...">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <ul class="navbar-nav gap-2 mx-lg-auto">
-                                <li class="nav-item"><a class="nav-link rounded-pill" href="index.html" aria-current="page">Product</a></li>
-                                <li class="nav-item"><a class="nav-link rounded-pill" href="pages/dashboard.html">Dashboard</a></li>
-                                <li class="nav-item"><a class="nav-link rounded-pill" href="pages/page-table-listing.html">Trade</a></li>
-                                <li class="nav-item"><a class="nav-link rounded-pill" href="pages/page-list.html">Stake</a></li>
+                                <li class="nav-item"><a class="nav-link rounded-pill" href="./" aria-current="page">Home</a></li>
+                                <li class="nav-item"><a class="nav-link rounded-pill" href="about">About</a></li>
+                                <li class="nav-item"><a class="nav-link rounded-pill" href="team">Team</a></li>
+                                <li class="nav-item"><a class="nav-link rounded-pill" href="pages/page-list.html">How it works</a></li>
                             </ul>
                             <div class="navbar-nav align-items-lg-center justify-content-end gap-2 ms-lg-4 w-lg-64">
                                 <a class="nav-item nav-link rounded-pill d-none d-lg-block" href="login">Sign in</a> 
@@ -43,12 +30,14 @@
                 <div class="container">
                     <div class="row align-items-center g-10">
                         <div class="col-lg-8">
-                            <h1 class="ls-tight fw-bolder display-3 text-white mb-5">Build Professional Dashboards, Faster than Ever.</h1>
-                            <p class="w-xl-75 lead text-white">With our intuitive tools and expertly designed components, you'll have the power to create professional dashboards quicker than ever.</p>
+                            <h1 class="ls-tight fw-bolder display-3 text-white mb-5">Incident Response<br>Playbook</h1>
+                            <p class="w-xl-75 lead text-white">Incident Response Playbook provides a robust platform for incident response simulations and playbooks rooted in NIST processing.</p>
                         </div>
                         <div class="col-lg-4 align-self-end">
-                            <div class="hstack gap-3 justify-content-lg-end"><a href="https://themes.getbootstrap.com/product/satoshi-defi-and-crypto-exchange-theme/" class="btn btn-lg btn-white rounded-pill bg-dark-hover border-0 shadow-none px-lg-8" target="_blank">Purchase now </a><a href="pages/dashboard.html"
-                                    class="btn btn-lg btn-dark rounded-pill border-0 shadow-none px-lg-8">Explore more</a></div>
+                            <div class="hstack gap-3 justify-content-lg-end">
+                                <a href="signup" class="btn btn-lg btn-white rounded-pill bg-dark-hover border-0 shadow-none px-lg-8" target="_blank">Get started </a>
+                                <a href="pages/dashboard.html" class="btn btn-lg btn-dark rounded-pill border-0 shadow-none px-lg-8">Explore more</a>
+                            </div>
                         </div>
                     </div>
                     <div class="mt-10 d-none d-lg-block"><img src="assets/img/marketing/hero-img-1.png"></div>

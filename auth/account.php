@@ -33,7 +33,7 @@ if (isset($_POST['user_registration'])) {
             $_SESSION['first_name'] = $first_name;
             $_SESSION['user_id'] = $user_id;
 
-            $_SESSION['success_message']    = "Registration successfull.. redirecting";
+            $_SESSION['success_message']    = "Registration successful.. redirecting";
             echo "<meta http-equiv='refresh' content='5; URL=login'>"; 
         }else {
             $_SESSION['error_message']    = "Error creating account contact support";
@@ -76,7 +76,7 @@ if (isset($_POST['user_login'])) {
             $_SESSION['error_message'] = "Your account is frozen, please contact support";
         }
         if ($status == 'Active'){
-            $_SESSION['success_message'] = "Login Successfull... redirecting";
+            $_SESSION['success_message'] = "Login Successful... redirecting";
             echo "<meta http-equiv='refresh' content='5; URL=dashboard'>"; 
             // header('location: dashboard');
         }
