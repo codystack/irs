@@ -1,28 +1,11 @@
-<?php
-//Connect Database
-include ('./config/db.php');
-
-session_start();
-
-if (!isset($_SESSION['username'])) {
-    header('location: logout');
-}
-
-if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['username']);
-    header("location: login");
-}
-
-?>
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="color-scheme" content="dark light">
-    <title>Dashboard :: IRS&trade;</title>
+    <title>IRS&trade; :: Incident Response Simulation</title>
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/utility.css">
@@ -30,4 +13,5 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@900,700,500,300,401,400&amp;display=swap">
 </head>
 
-<body class="bg-body-tertiary">
+<body class="p-1 p-lg-2">
+    <div class="overflow-x-hidden rounded-top-4 pt-2 pt-lg-4">
