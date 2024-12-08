@@ -3,7 +3,7 @@
             <div class="container">
                 <a class="navbar-brand me-0" href="./">
                     <img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
-                    <img class="dark-mode-item navbar-brand-item" src="assets/images/logo-COLORED.svg" alt="logo">
+                    <img class="dark-mode-item navbar-brand-item" src="assets/images/logo-colored.svg" alt="logo">
                 </a>
 
                 <div class="navbar-collapse collapse" id="navbarCollapse">

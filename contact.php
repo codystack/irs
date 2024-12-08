@@ -32,7 +32,9 @@ include "./components/navbar-alt.php";
                             <p class="mb-0">Speak with a member of our team. We’re always ready to assist you.</p>
                         </div>
                         <div class="card-footer bg-transparent p-0 pt-3">
-                            <a href="#" class="text-primary-grad">+1 (639) 590‑4657</a>
+                            <a href="#" class="text-primary-grad">+1 (639) 590‑4657</a><br>
+                            <a href="#" class="text-primary-grad">+1 (639) 915-1863</a><br>
+                            <a href="#" class="text-primary-grad">+1 (306) 510-9736</a>
                         </div>
                     </div>
                 </div>
