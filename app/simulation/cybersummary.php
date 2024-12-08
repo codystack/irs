@@ -131,7 +131,45 @@ if (isset($_GET['logout'])) {
             <h4>6. Prepare to Failover<br></h4>
             <p style="padding-left: 20px;">Contact DR provider and select snapshot.<br><br></p>
             <h4>7. Start Recovery<br></h4>
-            <p style="padding-left: 20px;">Begin the failover.<br><br></p>
+            <p style="padding-<div class="container" style="padding-top: 50px;">
+  <div class="row title">
+    <p>Event Logs</p>
+  </div>
+  <div class="info">
+    <p>Below are the event logs for the incident response simulation:</p>
+    <hr>
+  </div> 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h3 style="margin-bottom: 3px !important; margin-top: 3px !important;">Event Log 1</h3>
+          </div>
+          <div class="panel-body">
+            <p>10:30am - User reports significant performance issues after opening an unusual email attachment.</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h3 style="margin-bottom: 3px !important; margin-top: 3px !important;">Event Log 2</h3>
+          </div>
+          <div class="panel-body">
+            <p>10:45am - Several other users complain of slow network speeds and difficulty in accessing files.</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h3 style="margin-bottom: 3px !important; margin-top: 3px !important;">Event Log 3</h3>
+          </div>
+          <div class="panel-body">
+            <p>11:00am - IT Manager suspects one of the VMs has been exposed to malware and initiates incident response protocol.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>left: 20px;">Begin the failover.<br><br></p>
             <h4>8. Start Failover<br></h4>
             <p style="padding-left: 20px;">Fail the filer server over to DR Providers environment.<br><br></p>
             <h4>9. Inform Staff of Resumed Access to the File Server<br></h4>
