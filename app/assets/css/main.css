@@ -2676,7 +2676,7 @@ progress {
     }
 
     .modal-dialog {
-        /* max-width: var(--x-modal-width); */
+        max-width: 800px;
         margin-left: auto;
         margin-right: auto
     }
