@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tabletop Testing</title>
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- base styling based on Bootstrap -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <!-- base scripts based on Bootstrap & jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- drag & drop plugin -->
+  <link rel="stylesheet" href="assets/css/dragula.min.css">
+  <script src="assets/js/dragula.min.js"></script>
+  <!-- app style overwrites -->
+  <link rel="stylesheet" href="assets/css/cyber.css">
+  <link rel="stylesheet" href="assets/css/hover.css">
+  <!-- app logic & data -->
+  <script src="assets/tutorial-js/app-logic.js"></script>
+  <script src="assets/tutorial-js/app-data.js"></script>
+  <script src="assets/js/smooth-scroll.js"></script>
+  <script>
+  smoothScroll.init();
+  </script>
+</head>
+
+<body>
+
+  <a href="index.html">
+    <div class="overlay">
+      <div class="overlay-pop-up">
+        <div class="close-button"><img src="assets/img/close_button.svg"></div>
+        <p><span style="font-weight:700">Your browser window is too small.</span><br>This simulation is optimised for desktop use. Please maximise your window or switch to a laptop or desktop computer with a larger screen size.</p>
+        <p style="font-size: 13px; color: #A5A5A5; margin-top:0px">Thank you</p>
+      </div>
+    </div>
+  </a>
+  <!-- Header -->
+  <header>
+    <div class="container_h">
+
+      <div class="media">
+        <a href="http://www.databarracks.com">
+          <span class="highlight">Go to www.databarracks.com</span>
+        </a>
+        <a href="https://twitter.com/databarracks" target="_blank">
+          <img class="twitter hvr-bob" src="assets/img/twitter.png" alt="Twitter">
+        </a>
+        <a href="http://www.linkedin.com/company/databarracks" target="_blank">
+          <img class="linkedin hvr-bob" src="assets/img/linkedin.png" alt="Linkedin">
+        </a>
+      </div>
+    </div>  
+    <div class="container1">
+      <div class="logo">
+        <a href="index.html">
+          <img style="margin-top: -13px;" src="http://s3-eu-west-1.amazonaws.com/dbwebmedia/i/gfx/top-logo.png" alt="Databarracks">
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="tutorial.html">TUTORIAL</a></li>
+          <li><a href="sanfailure.html">SAN FAILURE</a></li>
+          <li><a style="color: #d70000 !important;" href="cyberattack.html">CYBER ATTACK</a></li>
+        </ul>
+      </div>
+    </div>   
+  </header>
+
+  <div class="fullWidth">
+    <div class="banner">
+      <div class="container">
+       <div class="row">
+         <div class="col-md-6">
+          <h1 class="header">Cyber-Attack</h1>
+          <p class="header">You manage the IT for MNY Assets, a mid-sized financial services company.  Earlier, one of your users reported significant performance issues after opening an unusual email attachment. Since then, several other users have complained of slow network speeds and difficulty in accessing files.<br><br>You suspect one of your VMs has been exposed to malware. You need to find and isolate the source to prevent its spread, restore any corrupted data and maintain access to unaffected services for users to ensure continuity.</p>
+        </div>
+        <div class="col-md-6 icon">
+          <img src="assets/img/cyber_icon.png">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="btnchevron">
+   <a data-scroll href="#content" class="btn btn-default btn-circle btn-xl" role="button"><i class="glyphicon glyphicon-chevron-down chevron"></i></a>
+ </div>
+
+ <div class="container">
+   <div class="row title">
+    <p>Take a look at the event log</p>
+  </div>
+  <div class="info">
+    <p>Keeping a well-maintained event log is almost as important as the recovery itself. No plan is above failure, and it’s extremely common for elements to perform unexpectedly or sub-optimally. You should meticulously capture your recovery steps and interrogate them afterwards. Review their effectiveness and take steps against failures.</p>
+    <hr>
+  </div> 
+</div>
+
+<div id="content" class="container" style="margin-bottom: -44px !important; margin-top: -44px !important">
+  <div class="row">
+    <div class="col-md-2 animated fadeIn" id="tick1">
+      <img src="assets/img/tick3.png">
+    </div>
+    <div class="col-md-10">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h3 style="margin-bottom: 3px !important; margin-top: 3px !important;">Task One – Triage</h3>
+          </div>
+          <div class="panel-body">
+            <h4>1. Isolate Source<br></h4>
+            <p style="padding-left: 20px;">Disconnect the file server.<br><br></p>
+            <h4>2. Establish Damage<br></h4>
+            <p style="padding-left: 20px;">Test remaining servers.<br><br></p>
+            <h4>3. Create Incident and Send Email to Employees<br></h4>
+            <p style="padding-left: 20px;">Log an incident and send employee email.<br><br></p>
+            <h4>4. Scan for Infection<br></h4>
+            <p style="padding-left: 20px;">Run a malware scan.<br><br></p>
+            <h4>5. Prevent Contamination<br></h4>
+            <p style="padding-left: 20px;">Disconnect backups.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-bottom: -44px !important;">
+  <div class="row">
+    <div class="col-md-2 animated fadeIn" id="tick2">
+      <img src="assets/img/tick3.png">
+    </div>
+    <div class="col-md-10">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h3 style="margin-bottom: 3px !important; margin-top: 3px !important;">Task Two – Maintain Business Continuity</h3>
+          </div>
+          <div class="panel-body">
+            <h4>6. Prepare to Failover<br></h4>
+            <p style="padding-left: 20px;">Contact DR provider and select snapshot.<br><br></p>
+            <h4>7. Start Recovery<br></h4>
+            <p style="padding-left: 20px;">Begin the failover.<br><br></p>
+            <h4>8. Start Failover<br></h4>
+            <p style="padding-left: 20px;">Fail the filer server over to DR Providers environment.<br><br></p>
+            <h4>9. Inform Staff of Resumed Access to the File Server<br></h4>
+            <p style="padding-left: 20px;">Send employee email.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-bottom: -66px !important;">
+  <div class="row">
+    <div class="col-md-2 animated fadeIn" id="tick3">
+      <img src="assets/img/tick3.png">
+    </div>
+    <div class="col-md-10">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h3 style="margin-bottom: 3px !important; margin-top: 3px !important;">Task Three – Resolution</h3>
+          </div>
+          <div class="panel-body">
+            <h4>10. Call Hardware Provider to Order a New File Server<br></h4>
+            <p style="padding-left: 31px;">Contact Hardware Provider.<br><br></p>
+            <h4>11. Find DR Contact and Warn Users About Downtime<br></h4>
+            <p style="padding-left: 31px;">Call Managing Director and send employee email.<br><br></p>
+            <h4>12. Call DR Provider and Failback the File Server<br></h4>
+            <p style="padding-left: 31px;">Contact DR Provider and failback file server.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div style="padding-left: 192px;">
+    <a href="cyberattack.html" class="button radius start_btn">Start Again</a>
+    <a href="index.html" class="button radius tryagain_btn">Try Another Scenario</a>
+    <a href="http://info.databarracks.com/Disaster-Recovery-Toolkit.html" class="button radius tryagain_btn">Get Your DR Toolkit</a>
+  </div> 
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 footer">
+      <hr/>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-md-9">
+      <a style="color: #4B4B4B" href="http://www.databarracks.com/info/privacy/" class="footer_content">Privacy |</a> 
+      <a style="color: #4B4B4B" href="http://www.databarracks.com/info/terms-of-use/" class="footer_content">Terms of Use</a>
+      <p class="footer_content">© Databarracks 2016</p>
+    </div>
+    <div class="col-md-3">
+      <img src="assets/img/logo.png">
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+
+</html>

@@ -58,7 +58,7 @@ include "./components/dash-header.php";
                                                         <td><?php echo $type; ?></td>
                                                         <td><?php echo date('j F Y', $date); ?></td>
                                                         <td class="text-end">
-                                                            <a href="#" class="view_quote btn btn-dark btn-xs" id="<? echo $id; ?>"><i class="bi bi-eye"></i></a>
+                                                            <a href="#" class="view_log btn btn-dark btn-xs" id="<? echo $log_id; ?>"><i class="bi bi-eye"></i></a>
                                                         </td>
                                                     </tr>
                                                     <?php
@@ -78,4 +78,7 @@ include "./components/dash-header.php";
         </div>
     </div>
     
-<?php include "./components/footer.php"; ?>
+<?php 
+include "./components/modal.php";
+include "./components/footer.php";
+?>
