@@ -18,6 +18,13 @@ include "../config/db.php";
                 $source_port = $row['source_port'];
                 $destination_address = $row['destination_address'];
                 $destination_port = $row['destination_port'];
+                $request_url = $row['request_url'];
+                $request_method = $row['request_method'];
+                $device_action = $row['device_action'];
+                $process = $row['process'];
+                $parent_process = $row['parent_process'];
+                $parent_process_md5 = $row['parent_process_md5'];
+                $firewall_action = $row['firewall_action'];
                 $time = $row['time'];
                 $time = strtotime($time);
                 $status = $row['status'];
@@ -114,43 +121,103 @@ include "../config/db.php";
 
             <div class="col-md-4 col-lg-6 col-12 text-right">
                 <div class="text-end">
-                    <span class="fs-6 text-end"><?php echo (date("F d, Y h:i A", $time)); ?></span>
+                    <span class="fs-6 text-end"><?php echo (date("M. d, Y h:i A", $time)); ?></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 col-lg-6 col-12">
+                <span class="fs-6 text-danger"><b>Raw Log</b></span>
+            </div>
+
+            <div class="col-md-4 col-lg-6 col-12 text-right">
+                <div class="text-end">
+                    <!-- <span class="fs-6 text-end text-danger"><b>Value</b></span> -->
                 </div>
             </div>
         </div>
 
         <div class="row mt-4 mb-3">
             <div class="col-md-8 col-lg-6 col-12">
-                <span class="fs-6"><b>Type:</b></span>
+                <span class="fs-6"><b>Request URL:</b></span>
             </div>
 
             <div class="col-md-4 col-lg-6 col-12 text-right">
                 <div class="text-end">
-                    <span class="fs-6 text-end"><?php echo $type; ?></span>
+                    <span class="fs-6 text-end"><?php echo $request_url; ?></span>
                 </div>
             </div>
         </div>
 
         <div class="row mt-4 mb-3">
             <div class="col-md-8 col-lg-6 col-12">
-                <span class="fs-6"><b>Type:</b></span>
+                <span class="fs-6"><b>Request Method:</b></span>
             </div>
 
             <div class="col-md-4 col-lg-6 col-12 text-right">
                 <div class="text-end">
-                    <span class="fs-6 text-end"><?php echo $type; ?></span>
+                    <span class="fs-6 text-end"><?php echo $request_method; ?></span>
                 </div>
             </div>
         </div>
 
         <div class="row mt-4 mb-3">
             <div class="col-md-8 col-lg-6 col-12">
-                <span class="fs-6"><b>Type:</b></span>
+                <span class="fs-6"><b>Device Action:</b></span>
             </div>
 
             <div class="col-md-4 col-lg-6 col-12 text-right">
                 <div class="text-end">
-                    <span class="fs-6 text-end"><?php echo $type; ?></span>
+                    <span class="fs-6 text-end"><?php echo $device_action; ?></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+            <div class="col-md-8 col-lg-6 col-12">
+                <span class="fs-6"><b>Process:</b></span>
+            </div>
+
+            <div class="col-md-4 col-lg-6 col-12 text-right">
+                <div class="text-end">
+                    <span class="fs-6 text-end"><?php echo $process; ?></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+            <div class="col-md-8 col-lg-6 col-12">
+                <span class="fs-6"><b>Parent Process:</b></span>
+            </div>
+
+            <div class="col-md-4 col-lg-6 col-12 text-right">
+                <div class="text-end">
+                    <span class="fs-6 text-end"><?php echo $parent_process; ?></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+            <div class="col-md-8 col-lg-6 col-12">
+                <span class="fs-6"><b>Parent Process MD5:</b></span>
+            </div>
+
+            <div class="col-md-4 col-lg-6 col-12 text-right">
+                <div class="text-end">
+                    <span class="fs-6 text-end"><?php echo $parent_process_md5; ?></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+            <div class="col-md-8 col-lg-6 col-12">
+                <span class="fs-6"><b>Firewall Action:</b></span>
+            </div>
+
+            <div class="col-md-4 col-lg-6 col-12 text-right">
+                <div class="text-end">
+                    <span class="fs-6 text-end"><?php echo $firewall_action; ?></span>
                 </div>
             </div>
         </div>

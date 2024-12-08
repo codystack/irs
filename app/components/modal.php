@@ -15,7 +15,7 @@
 
     <!-- View log modal start-->
     <div class="modal fade" id="viewLogModal" tabindex="-1" aria-labelledby="viewLogModal" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content shadow-3">
                 <div class="modal-header justify-content-start">
                     <div class="icon icon-shape rounded-3 bg-primary-subtle text-primary text-lg me-4"><i class="bi bi-info-circle-fill"></i></div>

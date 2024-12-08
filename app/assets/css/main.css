@@ -2676,9 +2676,15 @@ progress {
     }
 
     .modal-dialog {
-        max-width: var(--x-modal-width);
+        /* max-width: var(--x-modal-width); */
         margin-left: auto;
         margin-right: auto
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        --bs-modal-width: 800px;
     }
 }
 

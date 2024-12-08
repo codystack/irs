@@ -5,7 +5,7 @@ include ('.././config/db.php');
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header('location: logout');
+    header('location: ../logout');
 }
 
 if (isset($_GET['logout'])) {
