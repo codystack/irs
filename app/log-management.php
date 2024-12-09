@@ -33,7 +33,7 @@ include "./components/dash-header.php";
 
                                                 <tbody>
                                                     <?php
-                                                    $select_query = "SELECT * FROM log WHERE userID='" . $_SESSION['user_id'] . "' ORDER BY created_at ASC";
+                                                    $select_query = "SELECT * FROM log WHERE userID='".$_SESSION['user_id']."' ORDER BY created_at ASC";
                                                         $result = mysqli_query($conn, $select_query);
                                                         if (mysqli_num_rows($result) > 0) {
                                                             // output data of each row

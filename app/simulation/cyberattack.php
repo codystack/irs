@@ -41,7 +41,7 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
-    <a href="index.html">
+    <a href="../dashboard">
         <div class="overlay">
           <div class="overlay-pop-up">
             <div class="close-button"><img src="assets/img/close_button.svg"></div>
@@ -80,7 +80,7 @@ if (isset($_GET['logout'])) {
         <p id="result-modal-description">Description</p>
       </div>
       <div class="modal-footer">
-        <a href="cybersummary.html"><input style="background-color: #808080; border: none; color: #fff; padding: 10px; border-radius: 6px;" type="submit" value="Next"></a>
+        <a href="cybersummary"><input style="background-color: #808080; border: none; color: #fff; padding: 10px; border-radius: 6px;" type="submit" value="Next"></a>
       </div>
     </div>
   </div>

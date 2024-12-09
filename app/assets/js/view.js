@@ -13,3 +13,20 @@ $(document).ready(function(){
         });
     });
 });
+
+
+//Case View Trigger
+$(document).ready(function(){
+    $(document).on('click','.view_case',function(){
+        var view_case_id=$(this).attr('id');
+        $.ajax({
+            url:"./view/view-case.php",
+            type:"post",
+            data:{view_case_id:view_case_id},
+            success:function(data){
+                $("#case_info").html(data);
+                $("#viewCaseModal").modal('show');
+            }
+        });
+    });
+});

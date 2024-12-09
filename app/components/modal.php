@@ -35,6 +35,29 @@
     <!-- View log modal end-->
 
 
+    <!-- View case modal start-->
+    <div class="modal fade" id="viewCaseModal" tabindex="-1" aria-labelledby="viewCaseModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content shadow-3">
+                <div class="modal-header justify-content-start">
+                    <div class="icon icon-shape rounded-3  text-lg me-4 bg-secondary bg-opacity-25 text-secondary"><i class="bi bi-file-fill"></i></div>
+                    <div>
+                        <h5 class="mb-1">Incident Details</h5>
+                    </div>
+                </div>
+                <div class="modal-body" id="case_info">
+                    <?php @include("../view/view-case.php");?>
+                </div>
+                <div class="modal-footer">
+                    <a href="simulation/cyberattack" class="btn btn-sm btn-primary">Start Playbook</a>
+                    <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- View case modal end-->
+
+
 
     <div class="modal fade" id="depositLiquidityModal" tabindex="-1" aria-labelledby="depositLiquidityModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">

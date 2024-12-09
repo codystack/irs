@@ -4,6 +4,7 @@
     <script src="assets/js/view.js"></script>
     <script src="assets/js/switcher.js"></script>
     <script src="assets/js/datatable.js"></script>
+    <script src="assets/js/update.js"></script>
 
     <script>
         new DataTable('#logMgt');

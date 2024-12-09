@@ -1,6 +1,7 @@
 <?php
 $page = "Dashboard";
 include "./components/dash-header.php";
+require_once "./auth/queries.php";
 ?>
     <div class="d-flex flex-column flex-lg-row h-lg-100 gap-1">
         <?php include "./components/sidebar.php"; ?>
@@ -22,6 +23,31 @@ include "./components/dash-header.php";
                         </ul>
                     </header>
 
+                    <?php
+                        if (isset($_SESSION['error_message'])) {
+                            ?>
+                            <div class="alert alert-danger" role="alert">
+                                <div class="alert-message text-center">
+                                    <span class="fe fe-alert-triangle"></span> <?php echo $_SESSION['error_message'];?>
+                                </div>
+                            </div>
+                            <?php
+                            unset($_SESSION['error_message']);
+                        }
+                    ?>
+                    <?php
+                        if (isset($_SESSION['success_message'])) {
+                            ?>
+                            <div class="alert alert-success" role="alert">
+                                <div class="alert-message text-center">
+                                    <span class="fe fe-check-circle"></span> <?php echo $_SESSION['success_message']; ?>
+                                </div>
+                            </div>
+                            <?php
+                            unset($_SESSION['success_message']);
+                        }
+                    ?>
+
                     <div class="card mb-7">
                         <div class="card-body pb-0">
                             <div class="table-responsive mb-10 mt-5">
@@ -38,7 +64,7 @@ include "./components/dash-header.php";
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $select_query = "SELECT * FROM kase ORDER BY created_at ASC";
+                                        $select_query = "SELECT * FROM kase WHERE ownership='Available' ORDER BY created_at ASC";
                                             $result = mysqli_query($conn, $select_query);
                                             if (mysqli_num_rows($result) > 0) {
                                                 // output data of each row
@@ -83,7 +109,7 @@ include "./components/dash-header.php";
                                             <td class="text-end dropdown">
                                                 <button type="button" class="btn btn-sm btn-square btn-neutral w-rem-6 h-rem-6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-three-dots"></i></button>
                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                    <a href="#!" class="dropdown-item">Take ownership</a>
+                                                    <buttomn type="button" data-id="<? echo $case_id; ?>" onclick="confirmMonitoringUpdate(this);" class="dropdown-item">Take ownership</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -121,4 +147,7 @@ include "./components/dash-header.php";
         </div>
     </div>
     
-<?php include "./components/footer.php"; ?>
+<?php
+include "./components/update-modals.php";
+include "./components/footer.php";
+?>
