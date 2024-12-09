@@ -25,7 +25,7 @@ include "./components/dash-header.php";
                     <div class="card mb-7">
                         <div class="card-body pb-0">
                             <div class="table-responsive mb-10 mt-5">
-                                <table id="monitoring" class="table table-hover table-striped table-sm table-nowrap">
+                                <table id="monitoring" class="table table-hover table-sm table-nowrap">
                                     <thead>
                                         <tr>
                                             <th scope="col">Rule Name</th>
@@ -51,6 +51,23 @@ include "./components/dash-header.php";
                                                     $severity = $row['severity'];
                                                     $event_time = $row['event_time'];
                                                     $date = strtotime($event_time);
+                                                    $severity = $row['severity'];
+                                                    switch ($severity) {
+                                                        case "Critical";
+                                                            $class  = 'text-danger';
+                                                            $background = 'bg-danger';
+                                                            break;
+                                                        case "High";
+                                                            $class  = 'text-primary';
+                                                            $background = 'bg-primary';
+                                                            break;
+                                                        case "Medium";
+                                                            $class  = 'text-warning';
+                                                            $background = 'bg-warning';
+                                                            break;
+                                                        default:
+                                                            $class  = '';
+                                                    }
                                         ?>
                                         <tr>
                                             <td>
@@ -59,8 +76,8 @@ include "./components/dash-header.php";
                                                     <div><span class="d-block text-heading fw-bold"><?php echo $rule; ?></span></div>
                                                 </div>
                                             </td>
-                                            <td class="d-xl-table-cell"><span class="badge badge-lg badge-dot"><i class="bg-success"></i><?php echo $severity; ?></span></td>
-                                            <td class="d-xl-table-cell"><?php echo date('j F Y', $date); ?></td>
+                                            <td class="d-xl-table-cell"><span class="badge <?php echo $background; ?> bg-opacity-25 <?php echo $class; ?>"><?php echo $severity; ?></span></td>
+                                            <td class="d-xl-table-cell"><?php echo date('j M. Y', $date); ?></td>
                                             <td class="text-xs"><?php echo $eventID; ?></td>
                                             <td><?php echo $type; ?></td>
                                             <td class="text-end dropdown">

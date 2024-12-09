@@ -45,9 +45,9 @@
                             <li class="nav-item my-1">
                                 <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Case Management'){echo 'active';}?>" href="case-management"><i class="bi bi-list-task"></i><span>Case Management</span></a>
                             </li>
-                            <li class="nav-item my-1">
+                            <!-- <li class="nav-item my-1">
                                 <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='End Point'){echo 'active';}?>" href="end-point"><i class="bi bi-cpu"></i><span>Endpoint Security</span></a>
-                            </li>
+                            </li> -->
                             <li class="nav-item my-1">
                                 <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Playbook'){echo 'active';}?>" href="simulation/cyberattack.html"><i class="bi bi-journal-code"></i><span>IRS Playbook</span></a>
                             </li>

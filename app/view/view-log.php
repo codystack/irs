@@ -27,19 +27,7 @@ include "../config/db.php";
                 $firewall_action = $row['firewall_action'];
                 $time = $row['time'];
                 $time = strtotime($time);
-                $status = $row['status'];
-                switch ($status) {
-                    case 0;
-                        $class  = 'bg-danger';
-                        $text = 'Inactive';
-                        break;
-                    case 1;
-                        $class  = 'bg-success';
-                        $text = 'Active';
-                        break;
-                    default:
-                        $class  = '';
-                }
+                
     ?>
     <div class="container mb-10">
         <div class="row mt-1">
