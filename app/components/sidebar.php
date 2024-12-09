@@ -49,7 +49,7 @@
                                 <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='End Point'){echo 'active';}?>" href="end-point"><i class="bi bi-cpu"></i><span>Endpoint Security</span></a>
                             </li> -->
                             <li class="nav-item my-1">
-                                <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Playbook'){echo 'active';}?>" href="simulation/cyberattack.html"><i class="bi bi-journal-code"></i><span>IRS Playbook</span></a>
+                                <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Playbook'){echo 'active';}?>" href="simulation/cyberattack"><i class="bi bi-journal-code"></i><span>IRS Playbook</span></a>
                             </li>
                         </ul>
                         <hr class="navbar-divider my-5 opacity-70">
