@@ -19,7 +19,7 @@ include "../config/db.php";
                 $event_time = strtotime($event_time);
                 
     ?>
-    <div class="container mb-10">
+    <div class="container">
         <div class="row mt-4 mb-3">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Incident Name:</b></span>
@@ -56,7 +56,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Created Date:</b></span>
             </div>

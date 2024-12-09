@@ -42,7 +42,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$type){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Type:</b></span>
             </div>
@@ -54,7 +54,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$source_address){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Source Address:</b></span>
             </div>
@@ -66,7 +66,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$source_port){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Source Port:</b></span>
             </div>
@@ -78,7 +78,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$destination_address){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Destination Address:</b></span>
             </div>
@@ -90,7 +90,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$destination_port){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Destination Port:</b></span>
             </div>
@@ -102,7 +102,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$time){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Time:</b></span>
             </div>
@@ -126,7 +126,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$request_url){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Request URL:</b></span>
             </div>
@@ -138,7 +138,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$request_method){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Request Method:</b></span>
             </div>
@@ -150,7 +150,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$device_action){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Device Action:</b></span>
             </div>
@@ -162,7 +162,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$process){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Process:</b></span>
             </div>
@@ -174,7 +174,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$parent_process){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Parent Process:</b></span>
             </div>
@@ -186,7 +186,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$parent_process_md5){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Parent Process MD5:</b></span>
             </div>
@@ -198,7 +198,7 @@ include "../config/db.php";
             </div>
         </div>
 
-        <div class="row mt-4 mb-3">
+        <div class="row mt-4 mb-3" style="display: <?php if (!$firewall_action){echo 'none';}else{echo 'unset';}; ?>">
             <div class="col-md-8 col-lg-6 col-12">
                 <span class="fs-6"><b>Firewall Action:</b></span>
             </div>
