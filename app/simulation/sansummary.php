@@ -19,27 +19,21 @@ if (isset($_GET['logout'])) {
 <html>
 
 <head>
-  <title>Tabletop Testing</title>
+  <title>Incident Response Simulation</title>
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
-  <!-- meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- base styling based on Bootstrap -->
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
   <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
-  <!-- base scripts based on Bootstrap & jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <!-- drag & drop plugin -->
   <link rel="stylesheet" href="assets/css/dragula.min.css">
   <script src="assets/js/dragula.min.js"></script>
-  <!-- app style overwrites -->
   <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/hover.css">
     
-  <!-- app logic & data -->
   <script src="assets/tutorial-js/app-logic.js"></script>
   <script src="assets/tutorial-js/app-data.js"></script>
   <script src="assets/js/smooth-scroll.js"></script>
@@ -50,7 +44,7 @@ if (isset($_GET['logout'])) {
 
 <body>
 
-    <a href="index.html">
+    <a href="../dashboard">
       <div class="overlay">
         <div class="overlay-pop-up">
           <div class="close-button"><img src="assets/img/close_button.svg"></div>

@@ -49,7 +49,7 @@ if (isset($_GET['logout'])) {
 
 <body>
 
-  <a href="index.html">
+  <a href="../dashboard">
     <div class="overlay">
       <div class="overlay-pop-up">
         <div class="close-button"><img src="assets/img/close_button.svg"></div>
