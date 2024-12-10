@@ -1,27 +1,38 @@
+<?php
+//Connect Database
+include ('.././config/db.php');
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header('location: ../logout');
+}
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: login");
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Tabletop Testing</title>
+  <title>Incident Response Simulation</title>
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
-  <!-- meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- base styling based on Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
   <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
-  <!-- base scripts based on Bootstrap & jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <!-- drag & drop plugin -->
   <link rel="stylesheet" href="assets/css/dragula.min.css">
   <script src="assets/js/dragula.min.js"></script>
-  <!-- app style overwrites -->
   <link rel="stylesheet" href="assets/css/tutorial.css">
   <link rel="stylesheet" href="assets/css/hover.css">
   
-  <!-- app logic & data -->
   <script src="assets/tutorial-js/app-logic.js"></script>
   <script src="assets/tutorial-js/app-data.js"></script>
   <script src="assets/js/smooth-scroll.js"></script>
@@ -32,7 +43,7 @@
 
 <body>
   
-  <a href="index.html">
+  <a href="../dashboard">
   <div class="overlay">
     <div class="overlay-pop-up">
       <div class="close-button"><img src="assets/img/close_button.svg"></div>
@@ -42,45 +53,13 @@
   </div>
 </a>
 
-  <!-- Header -->
-  <header>
-    <div class="container_h">
-
-      <div class="media">
-        <a href="http://www.databarracks.com">
-          <span class="highlight">Go to www.databarracks.com</span>
-        </a>
-        <a href="https://twitter.com/databarracks" target="_blank">
-          <img class="twitter hvr-bob" src="assets/img/twitter.png" alt="Twitter">
-        </a>
-        <a href="http://www.linkedin.com/company/databarracks" target="_blank">
-          <img class="linkedin hvr-bob" src="assets/img/linkedin.png" alt="Linkedin">
-        </a>
-      </div>
-    </div>  
-    <div class="container1">
-      <div class="logo">
-        <a href="index.html">
-          <img src="http://s3-eu-west-1.amazonaws.com/dbwebmedia/i/gfx/top-logo.png" alt="Databarracks">
-        </a>
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a style="color: #d70000 !important;" href="tutorial.html">TUTORIAL</a></li>
-          <li><a href="sanfailure.html">SAN FAILURE</a></li>
-          <li><a href="cyberattack.html">CYBER ATTACK</a></li>
-        </ul>
-      </div>
-    </div>   
-  </header>
 
   <div class="fullWidth">
     <div class="banner">
       <div class="container">
        <div class="row">
          <div class="col-md-6">
-          <h1 class="header"><strong>Tutorial</strong><br>Fire in the Server Room</h1>
+          <h1 class="header">Fire in the Server Room</h1>
           <p class="header">Welcome to the tabletop interface.<br><br> In this simulation, you’re managing the IT for a small manufacturer based in an office park. The business has a well-prepared DR plan, composed of both a dedicated off-site recovery suite and a 3rd party DR provider for IT services.<br><br>You need to help the organisation recover from a small fire caused by a catastrophic hardware failure in the server room.<br><br></p>
         </div>
         <div class="col-md-6 icon">
@@ -91,9 +70,6 @@
     </div>
   </div>
 
-  <div class="btnchevron">
-   <a data-scroll href="#content" class="btn btn-default btn-circle btn-xl" role="button"><i class="glyphicon glyphicon-chevron-down chevron"></i></a>
- </div>
 
 <!--  <div class="message">
   <p>Screen too small</p>
@@ -117,8 +93,8 @@
     </div>
   </div>
 </div>
-<!-- Quiz elements -->
-<div class="container">
+
+<div class="container" style="padding-top: 50px;">
   <div class="row">
     <div class="col-md-4" id="content">
       <div class="page-header">
@@ -171,24 +147,11 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 footer">
-      <hr/>
-    </div> 
-  </div>
-  <div class="row">
-    <div class="col-md-9">
-      <a style="color: #4B4B4B" href="http://www.databarracks.com/info/privacy/" class="footer_content">Privacy |</a> 
-      <a style="color: #4B4B4B" href="http://www.databarracks.com/info/terms-of-use/" class="footer_content">Terms of Use</a>
-      <p class="footer_content">© Databarracks 2016</p>
-    </div>
-    <div class="col-md-3">
-      <img src="assets/img/logo.png">
-    </div>
-  </div>
-
 </div>
+<div class="container">
+  <div style="padding-left: 192px;">
+    <a href="../dashboard" class="button radius tryagain_btn">Go back to dashboard</a>
+  </div> 
 </div>
 </body>
 
