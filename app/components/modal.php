@@ -49,7 +49,6 @@
                     <?php @include("../view/view-case.php");?>
                 </div>
                 <div class="modal-footer">
-                    <a href="simulation/cyberattack" class="btn btn-sm btn-primary">Start Playbook</a>
                     <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>

@@ -15,6 +15,7 @@ include "../config/db.php";
                 $eventID = $row['eventID'];
                 $type = $row['type'];
                 $rule = $row['rule'];
+                $playbook_link = $row['playbook_link'];
                 $event_time = $row['event_time'];
                 $event_time = strtotime($event_time);
                 
@@ -68,6 +69,9 @@ include "../config/db.php";
             </div>
         </div>
 
+        <div class="text-center mt-5">
+            <a href="<?php echo $playbook_link; ?>" class="btn btn-sm btn-primary">Start Playbook</a>
+        </div>
     </div>
     <?php
         }
