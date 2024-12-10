@@ -64,7 +64,7 @@ require_once "./auth/queries.php";
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $select_query = "SELECT * FROM kase WHERE ownership='Taken' ORDER BY created_at ASC";
+                                        $select_query = "SELECT kase.created_at, kase.case_id, kase.rule, kase.eventID, kase.type, kase.severity, kase.ownership, kase.event_time, kase_owner.userID, kase_owner.caseID FROM kase INNER JOIN kase_owner ON kase_owner.caseID = kase.case_id WHERE kase_owner.userID = '".$_SESSION['user_id']."' ORDER BY kase.created_at ASC";
                                             $result = mysqli_query($conn, $select_query);
                                             if (mysqli_num_rows($result) > 0) {
                                                 // output data of each row
@@ -73,11 +73,9 @@ require_once "./auth/queries.php";
                                                     $rule = $row['rule'];
                                                     $eventID = $row['eventID'];
                                                     $type = $row['type'];
-                                                    $type = $row['type'];
                                                     $severity = $row['severity'];
                                                     $event_time = $row['event_time'];
                                                     $date = strtotime($event_time);
-                                                    $severity = $row['severity'];
                                                     switch ($severity) {
                                                         case "Critical";
                                                             $class  = 'text-danger';
