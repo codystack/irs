@@ -43,14 +43,14 @@
                                 <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Log Management'){echo 'active';}?>" href="log-management"><i class="bi bi-folder"></i><span>Log Management</span></a>
                             </li>
                             <li class="nav-item my-1">
-                                <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Case Management'){echo 'active';}?>" href="case-management"><i class="bi bi-list-task"></i><span>Case Management</span></a>
+                                <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Case Management'){echo 'active';}?>" href="case-management"><i class="bi bi-list-task"></i><span>Tabletop Exercise</span></a>
                             </li>
                             <!-- <li class="nav-item my-1">
                                 <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='End Point'){echo 'active';}?>" href="end-point"><i class="bi bi-cpu"></i><span>Endpoint Security</span></a>
                             </li> -->
-                            <li class="nav-item my-1">
+                            <!-- <li class="nav-item my-1">
                                 <a class="nav-link d-flex align-items-center rounded-pill <?php if($page=='Playbook'){echo 'active';}?>" href="simulation/cyberattack"><i class="bi bi-journal-code"></i><span>IRS Playbook</span></a>
-                            </li>
+                            </li> -->
                         </ul>
                         <hr class="navbar-divider my-5 opacity-70">
                         <ul class="navbar-nav">

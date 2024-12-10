@@ -13,7 +13,7 @@ require_once "./auth/queries.php";
                     <header class="mb-10">
                         <div class="row align-items-center">
                             <div class="col-sm-6 col-12">
-                                <h1 class="ls-tight">Case List</h1>
+                                <h1 class="ls-tight">Tabletop Exercise</h1>
                             </div>
                         </div>
                         <!-- <ul class="nav nav-tabs nav-tabs-flush gap-6 overflow-x border-0 mt-4">
