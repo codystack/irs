@@ -94,7 +94,7 @@
     padding: 5px 0;
     background-image: url(../img/background.png);
     background-color: #78bec8;
-    margin-top: 14px;
+    /* margin-top: 14px; */
   }
 
   .header {
