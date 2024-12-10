@@ -94,11 +94,11 @@
    .banner {
     max-width: 100%;
     margin-bottom: -40px;
-    margin-top: 13px;
+    /* margin-top: 13px; */
     padding: 5px 0;
     background-image: url(../img/background.png);
     background-size: auto;
-    background-color: #30B297;
+    background-color: #b2309e;
   }
 
   .header {
