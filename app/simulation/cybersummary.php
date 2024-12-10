@@ -208,7 +208,7 @@ if (isset($_GET['logout'])) {
 
 <div class="container">
   <div style="padding-left: 192px;">
-    <a href="cyberattack.html" class="button radius start_btn">Start Again</a>
+    <a href="cyberattack" class="button radius start_btn">Start Again</a>
     <a href="../dashboard" class="button radius tryagain_btn">Go back to dashboard</a>
   </div> 
 </div>

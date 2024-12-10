@@ -53,38 +53,7 @@ if (isset($_GET['logout'])) {
       </div>
   </div>
 </a>
-<!-- Header -->
-<header>
-    <div class="container_h">
 
-      <div class="media">
-        <a href="http://www.databarracks.com">
-          <span class="highlight">Go to www.databarracks.com</span>
-        </a>
-        <a href="https://twitter.com/databarracks" target="_blank">
-          <img class="twitter hvr-bob" src="assets/img/twitter.png" alt="Twitter">
-        </a>
-        <a href="http://www.linkedin.com/company/databarracks" target="_blank">
-          <img class="linkedin hvr-bob" src="assets/img/linkedin.png" alt="Linkedin">
-        </a>
-      </div>
-    </div>  
-    <div class="container1">
-      <div class="logo">
-        <a href="index.html">
-          <img style="margin-top: -13px;" src="http://s3-eu-west-1.amazonaws.com/dbwebmedia/i/gfx/top-logo.png" alt="Databarracks">
-        </a>
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a  href="tutorial.html">TUTORIAL</a></li>
-          <li><a style="color: #d70000 !important;" href="sanfailure.html">SAN FAILURE</a></li>
-          <li><a href="cyberattack.html">CYBER ATTACK</a></li>
-        </ul>
-      </div>
-    </div>   
-  </header>
 
   <div class="fullWidth">
     <div class="banner">
@@ -103,11 +72,7 @@ if (isset($_GET['logout'])) {
     </div>
 </div>
 
-<div class="btnchevron">
- <a data-scroll href="#content" class="btn btn-default btn-circle btn-xl" role="button"><i class="glyphicon glyphicon-chevron-down chevron"></i></a>
-</div>
-
- <div class="container">
+ <div class="container" style="padding-top: 50px;">
    <div class="row title">
     <p>Take a look at the event log</p>
   </div>
@@ -193,31 +158,12 @@ if (isset($_GET['logout'])) {
 </div>
 
 <div class="container">
-<div style="padding-left: 192px;">
-  <a href="sanfailure.html" class="button radius start_btn">Start Again</a>
-  <a href="cyberattack.html" class="button radius tryagain_btn">Try The Next Scenario</a>
-  <a href="http://info.databarracks.com/Disaster-Recovery-Toolkit.html" class="button radius tryagain_btn">Get Your DR Toolkit</a>
-</div> 
+  <div style="padding-left: 192px;">
+    <a href="sanfailure" class="button radius start_btn">Start Again</a>
+    <a href="../dashboard" class="button radius tryagain_btn">Go back to dashboard</a>
+  </div> 
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 footer">
-      <hr/>
-    </div> 
-  </div>
-  <div class="row">
-    <div class="col-md-9">
-      <a style="color: #4B4B4B" href="http://www.databarracks.com/info/privacy/" class="footer_content">Privacy |</a> 
-      <a style="color: #4B4B4B" href="http://www.databarracks.com/info/terms-of-use/" class="footer_content">Terms of Use</a>
-      <p class="footer_content">© Databarracks 2016</p>
-    </div>
-    <div class="col-md-3">
-      <img src="assets/img/logo.png">
-    </div>
-  </div>
-
-</div>
 </div>
 </body>
 </html>
