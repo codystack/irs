@@ -56,7 +56,7 @@ if (isset($_GET['logout'])) {
           <div class="container">
             <div class="row">
              <div class="col-md-6">
-                <h1 class="header">Incident Response Simulation</h1>
+                <h1 class="header">Cyber Attack</h1>
                 <p class="header">As an IT Manager for SME, at around 10:30am, one of your users reported significant performance issues after opening an unusual email attachment. Since then, several other users have complained of slow network speeds and difficulty in accessing files.<br>
                   <br>You suspect one of your VMs has been exposed to malware. You need to find and isolate the source to prevent its spread, restore any corrupted data and maintain access to unaffected services for users to ensure continuity.</p>
               </div>
